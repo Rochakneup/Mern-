@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo img{
+    height: 80px;
+    width: 80px;
+}
+
+.navbar{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.icon{
+    display: none;
+}
+
+.content ul {
+    display: flex;
+}
+
+.content ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+.register{
+    background-color: aquamarine;
+    height: auto;
+
+    width: 400px;
+}

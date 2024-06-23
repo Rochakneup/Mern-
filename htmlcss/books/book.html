@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List</title>
+    <style>
+        .favorite {
+            font-size: large;
+            font-weight: bold;
+            color: rgb(102, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <ul id="book-list">
+
+    </ul>
+    <input type="text" id="searchbar" placeholder="Search " oninput="searchBook()">
+    <button onclick="addBook()">Add Book</button>
+    <button onclick="removeBook()">Remove Last Book</button>
+    <button onclick="clearHighlights()">Clear Highlights</button>
+    <script src="book.js"></script>
+</body>
+</html>

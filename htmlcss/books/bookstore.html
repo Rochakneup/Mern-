@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-Store</title>
+    <link rel="stylesheet" href="bookstore.css">
+     <style>
+        .favorite {
+            font-size: large;
+            font-weight: bold;
+            color: #d4c150;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnXfEwX4wm66Ru0s3Qe6CW2AcNz8UW1ddq2g&s" alt="logo" style="height: 40px; width: 40px;">
+
+        </div>
+        <div class="nav-heading">
+            <h2>The Book Heven</h2>
+        </div>
+        <div class="nav-end">
+            <ul>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">Favriote</a></li>
+                <li><a href="#">Add-Books</a></li>
+
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div class="body">
+        
+        <input type="text" id="searchbar" placeholder="Search " oninput="searchBook()">
+    <button onclick="addBook()">Add Book</button>
+    
+    <button onclick="clearHighlights()">Clear Highlights</button>
+    <button onclick="removeBook()">Remove Last Book</button>
+    <div class="book">
+        <ul id="book-list">
+    
+        </ul>
+        
+    </div>
+        <div class="bodyimg">
+            <img src="/asset/download (4).jpeg" alt="" style="height: 400px; width: 400px;">
+            
+        </div>
+       
+    </div>
+
+    <script src="book.js"></script>
+
+
+  
+</body>
+</html>

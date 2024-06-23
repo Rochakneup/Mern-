@@ -1,0 +1,17 @@
+#lorem{
+    color: aliceblue;
+    background-color: black;
+    border: 1px solid red;
+    border-radius: 20px;
+}
+table{
+    justify-content: center;
+}
+
+*{
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+
+    
+}
+

@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    display: flex;
+   justify-content: space-between;
+   box-shadow:5px 5px 5px 5px rgb(18, 18, 18);
+    
+}
+.nav-end ul {
+    display: flex;
+    padding-right: 10px;
+    
+    
+
+}
+.nav-end ul li{
+    
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    list-style: none;
+    margin-top: 15px;
+
+    
+}
+
+.nav-end ul li a{
+    
+    text-decoration: none;
+    color: black; 
+    transition: background-color 0.3s; 
+
+}
+
+
+.nav-end ul li :hover{
+    
+    background-color: #ddd; 
+    color: black; 
+
+}
+
+
+.nav-heading{
+   
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 15px;
+}
+
+.logo img{
+    padding-left: 10px;
+    margin-top: 15px;
+}
+
+.bodyimg img{
+
+ padding: 30px;
+}
+
+.body{
+    margin-top: 15px;
+    height: 700px;
+    background-color: #b9956d;
+}
+.bodyimg {
+
+   margin-left: 400px;
+   margin-top: -180px;
+   position: absolute;
+}
+
+.bodyimg h2{
+
+    font-family: 'Courier New', Courier, monospace;
+}
+.book{
+    height: 200px;
+    margin-top: -20px;
+    background-color: #b9956d;
+}
+#searchbar {
+    width: 50%;
+    
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #d4c150;
+    color: white;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color:  #bba52b;
+}

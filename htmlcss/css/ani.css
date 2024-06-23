@@ -1,0 +1,268 @@
+.button {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 1s ease;
+} 
+
+.button:hover {
+    background-color: #07395a;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.pulsating-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #f748b3;
+    border-radius: 50%;
+    animation: pulsate 2s infinite;
+}
+
+@keyframes pulsate {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+
+.bouncing-ball {
+    width: 50px;
+    height: 50px;
+    background-color: #000000;
+    border-radius: 50%;
+    position: absolute;
+    animation: bounce 3s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        top: 0;
+    }
+    50% {
+        top: 150px;
+    }
+}
+
+.ball-container {
+    position: relative;
+    height: 200px;
+    background-color: #07395a;
+    width: 200px;
+}
+
+
+.gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.gallery img {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.gallery img:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.gallery img:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.gallery img:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
+.marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 10s forwards infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.card {
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 1.8s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(360deg);
+}
+
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card-front {
+    background-color: #000000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-back {
+    background-color: #4ff800;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #000000;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.accordion {
+    width: 200px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #cc3f3f;
+}
+
+.accordion-header {
+    background-color:#cc3f3f;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: #050505;
+    color: #e0e0e0;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-content p {
+    padding: 10px;
+    margin: 0;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 200px;
+}
+
+
+.progress-bar-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0;
+    height: 25px;
+    background-color: #c93939;
+    border-radius: 25px;
+    animation: fill 10s  infinite;
+}
+
+@keyframes fill {
+    to {
+        width: 100%; 
+    }
+}
+
+
+.nav-container {
+    position: relative;
+    width: 100%;
+}
+
+.nav-menu {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200px;
+    background-color: #000000;
+    transition: left 0.3s ease;
+}
+
+.nav-menu.active {
+    left: 0;
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu ul li {
+    padding: 10px;
+    color: white;
+}
+
+.nav-toggle {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+}

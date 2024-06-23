@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation </title>
+    <style>
+div #div1{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(255, 0, 0);
+    /* transition: height 2s,width 5s, background-color 3s; */
+    animation: cardAnimate 2s infinite;
+}
+/* #div1:hover{
+    height: 300px;
+    width: 500px;
+    background-color: rgb(243, 245, 244)    ;
+    
+} */
+
+@keyframes cardAnimate {
+    from{
+        background-color: limegreen;
+        
+    }
+    to{
+        background-color:  rgb(255, 0, 0);
+    }
+    
+}
+    </style>
+</head>
+<body>
+    <div>
+        <div id="div1">
+            <p>
+                Animation
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>

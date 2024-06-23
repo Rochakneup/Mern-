@@ -1,0 +1,131 @@
+nav {
+    background-color: rgb(230, 51, 38);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+}
+
+.list a {
+    text-decoration: none;
+    padding: 20px;
+    color: #000;
+}
+
+.list a:hover {
+    color: tomato;
+    text-decoration: underline;
+}
+
+.icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.container {
+        /* width: 350px;
+        margin: 100px auto 0;
+        display: flex;
+        justify-content: center;
+        align-items: center; */
+        width: 450px;
+        margin: 100px auto 0;
+
+}
+
+.register {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.register h1 {
+    text-align: center;
+}
+
+.register label {
+    display: block;
+    margin: 10px 0 5px 20px;
+}
+
+.register input {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.register button {
+    background-color: #000;
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin: 20px 29px 0;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.register button:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+@media screen and (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .list a {
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    .list.show {
+        display: flex;
+    }
+
+    
+}
+
+.toggle-password{
+    margin-bottom: -40px;
+}

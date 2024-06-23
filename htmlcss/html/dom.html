@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1 id="title">Hello World</h1>
+    <p class="content">This is a paragrph</p>
+    <p class="content">Lorem ipsum dolor sit.</p>
+    <ul>
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li> 
+
+    </ul>
+    <button class="btn">Click me</button>
+
+    <input type="text" id="myinput" value="Hello,World"/>
+
+
+    <h2>JavaScript HTML Events</h2>
+    <p>Click the button to display the data</p>
+    <button onclick="displayData()">The time is ?</button>
+    <button id="btn">CLick ME</button>
+    <p id="demo"></p>
+
+    
+    <script >
+        function displayData(){
+            document.getElementById("demo").innerHTML=Date();
+        }
+        btn.addEventListener('click', function(){
+            alert("Button Clicked");
+            btn.style.color = 'red';
+        })
+        
+        
+    </script>   
+</body>
+</html>

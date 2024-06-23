@@ -1,0 +1,152 @@
+
+body{
+    margin: 0px;
+}
+.main{
+    height: 100vh;
+    background-image: url("https://www.forbesindia.com/media/images/2023/Nov/img_221707_shutterstock_316455128_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 50px;
+}
+.nav h4{
+    color: #ffb742 ;
+    font-weight: 1000;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.nav ul{
+    display: flex;
+
+
+}
+.nav ul li {
+    list-style: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+.nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 18px;
+    margin-right: 25px;
+
+}
+
+.nav ul li:hover a{
+    color: #ffb742;
+   text-decoration: underline
+
+}
+
+.nav ul li :last-child a {
+    margin: 0;
+}
+
+
+.quot{
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main h2{
+    font-size: 32px;
+    color:#ffffff;
+    font-weight: 600;}
+
+
+.main h4{
+font-size: 18px;
+color:#ffffff;
+font-weight: 600;
+}
+
+.quot span{
+    color: #e2b654;
+}
+.quot  h4{
+    color: #ffffff;
+    font-size: 20px;
+}
+ .button {
+    margin-top: 40px;
+    height: 40px;
+    width: 100px;
+    background-color: #e2b654;
+    color: #ffffff;
+    border-radius: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
+    
+    
+    
+ }
+ .button a{
+    text-decoration: none;
+    
+ }  
+.container {
+    height: auto;
+    background-color: #1c1c1c;
+    display: flex;
+    padding: 0px;
+   
+}
+
+.image-grid {
+    margin-top: 50px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    flex: 1;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.story-section {
+    flex: 1;
+    padding: 20px;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.story-section h2 {
+    color: #e2b654;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.story-section p {
+    font-size: 25px;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+
+.more-link {
+    font-size:20px ;
+    color: #e2b654;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.more-link:hover {
+    text-decoration: underline;
+}

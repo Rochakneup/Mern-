@@ -1,0 +1,24 @@
+.navbar{
+    height: auto;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+  
+}
+
+.nav{
+    justify-content: end ;
+}
+.nav ul li {
+    display: inline-block ;
+   
+    margin: 20px;
+
+}
+
+
+
+
+
+
+

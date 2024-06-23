@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav</title>
+    <link rel="stylesheet" href="/css/rsponsivenav.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp" alt="logo">
+            <span> Responsive Navbar </span>
+        </div>
+
+        <div class="icon" id="icon">
+            &#9776;
+        </div>
+
+        <div class="list" id="nav-list">
+            <a href="#">Home</a>
+            <a href="#">Contact us</a>
+            <a href="#">About us</a>
+            <a href="#">Courses</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <form class="register">
+            <h1>Register</h1>
+            <label for="username">Username</label> <br>
+            <input type="text" id="username" name="username" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="psd">Password</label>
+            <div class="passwordwrapper">
+            <input type="password" id="psd" name="Password" required>
+                <span class="toggle-password" id="toggle-password"><i class="ri-eye-off-line"></i></span>  
+            </div>     
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="/js/responsive.js"></script>
+</body>
+</html>
